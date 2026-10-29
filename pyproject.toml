@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "zenodo-metadata"
+version = "0.1.0"
+description = "Build and validate .zenodo.json deposit metadata from a simple project description."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "JANIN A APURBA", email = "japurba97@gmail.com"}]
+keywords = ["research", "automation", "reproducibility", "academic"]
+dependencies = []
+
+[project.scripts]
+zenodo-metadata = "zenodo_metadata.cli:main"
+
+[tool.setuptools]
+packages = ["zenodo_metadata"]
